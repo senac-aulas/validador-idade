@@ -3,28 +3,6 @@ let inputAge = document.querySelector('#age');
 let imagemResult = document.querySelector('#îmage_resultado');
 
 
-function validarCPFDoInput() {
-  const paragraph = document.querySelector('#value')
-  const error = document.querySelector('.error')
-
-  const valorDoInput = input.value.replace(/[^\d]+/g,'')
-
-  console.log('valor do input', valorDoInput)
-
-  paragraph.innerHTML = `CPF digitado: ${valorDoInput}`
-  error.innerHTML = validarCPF(valorDoInput)
-
-  if (validarCPF(valorDoInput)) {
-    error.classList.add('valido')
-    error.classList.remove('invalido')
-    error.innerHTML = 'CPF válido!'
-  } else {
-    error.classList.add('invalido')
-    error.classList.remove('valido')
-    error.innerHTML = 'CPF inválido.'
-  }
-}
-
 function validarNameDoInput() {
   const paragraph = document.querySelector('#value')
   const valueName = document.querySelector('#valueName');
